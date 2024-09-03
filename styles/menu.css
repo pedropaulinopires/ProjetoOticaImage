@@ -1,0 +1,47 @@
+.menu-mobile {
+    background-color: var(--Preto);
+    position: sticky;
+    top: 0;
+    border: none;
+    padding: 13px 5px;
+    display: flex;
+    justify-content: end;
+}
+
+.btn-menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 9px;
+    margin-right: 20px;
+}
+
+
+.btn-menu div {
+    background-color: var(--LaranjaClaro);
+    width: 40px;
+    height: 3px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.btn-menu div.active {
+    background-color: white;
+}
+
+.btn-menu div.line2 {
+    width: 30px;
+    transform: translateX(30%);
+}
+
+.btn-menu.active .line1 {
+    transform: rotate(-45deg) translate(-2px, 12px);
+}
+
+.btn-menu.active .line2 {
+    opacity: 0;
+}
+
+.btn-menu.active .line3 {
+    transform: rotate(45deg) translate(-4px, -15px);
+}

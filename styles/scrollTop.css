@@ -1,0 +1,45 @@
+.scroll-top{
+    background-color: var(--Preto);
+    height: 40px;
+    width: 40px;
+    border-radius: 25%;
+    position: fixed;
+    bottom: -40px;
+    right: 20px;
+    transition: all .5s;
+}
+
+.scroll-top.active{
+    bottom: 40px;
+}
+.scroll-top div{
+    background-color: var(--LaranjaClaro);
+    width: 16px;
+    height: 3px;
+    border-radius: 5px;
+}
+
+.scroll-top div.line1{
+    position: relative;
+    transform: rotate(-50deg) translate(-10px, 19px);
+}
+.scroll-top div.line2{
+    position: relative;
+    transform: rotate(50deg) translate(24px, -2px);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .scroll-top:hover{
+        opacity: .8;
+        transform: scale(1.03);
+        cursor: pointer;
+        transition: .5s;
+    }
+  }
+
+  .scroll-top:active{
+    opacity: .8;
+    transform: scale(1.03);
+    cursor: pointer;
+    transition: .5s;
+}
