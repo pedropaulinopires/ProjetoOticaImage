@@ -1,15 +1,12 @@
 const srcollToTop = document.getElementById("scroll-top");
 
 window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 350) {
+  if (window.scrollY > 350)
     srcollToTop.classList.add("active");
-  } else {
+  else
     srcollToTop.classList.remove("active");
-  }
 });
 
-function toTop() {
-  window.scrollTo(0, 0);
-}
+let toTop = () => window.scrollTo(0, 0);
 
-srcollToTop.addEventListener('click',()=>toTop())
+srcollToTop.addEventListener('click', () => toTop())

@@ -1,11 +1,28 @@
-.menu-mobile {
+.menu {
     background-color: var(--Preto);
     position: sticky;
     top: 0;
     border: none;
     padding: 13px 5px;
+    display: block;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.header-menu {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.logo-menu {
+    background-image: url('../imgs/logo_otica_imagem-menu.png');
+    height: 50px;
+    width: 150px;
+    margin-left: -8px;
+    background-position: center;
+    background-size: cover;
 }
 
 .btn-menu {
@@ -16,6 +33,35 @@
     margin-right: 20px;
 }
 
+.menu-desktop-content {
+    display: flex;
+    padding-right: 15px;
+    display: none;
+}
+
+.menu-desktop-content > a {
+    color: var(--LaranjaClaro);
+    text-decoration: none;
+    font-size: 16px;
+    padding-bottom: 20px;
+    text-align: center;
+    transition: all .3s;
+    margin-right: 15px;
+}
+
+.menu-desktop-content > a:hover{
+    background-color: var(--LaranjaClaro);
+}
+
+@media screen and (min-width:500px) {
+    .btn-menu {
+        display: none;
+    }
+
+    .menu-desktop-content {
+        display: block;
+    }
+}
 
 .btn-menu div {
     background-color: var(--LaranjaClaro);
@@ -44,4 +90,44 @@
 
 .btn-menu.active .line3 {
     transform: rotate(45deg) translate(-4px, -15px);
+}
+
+.menu-mobile-content {
+    background-color: var(--Preto);
+    padding-top: 0px;
+    height: 0px;
+    width: 100vw;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.spacer-menu-mobile {
+    margin-bottom: 15px;
+}
+
+.menu-mobile-content>a {
+    color: var(--LaranjaClaro);
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 1px solid var(--CorBordaSeparador);
+    padding-bottom: 15px;
+    width: 80vw;
+    text-align: center;
+    transition: all .3s;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .menu-mobile-content>a:hover {
+        opacity: 0.8;
+    }
+}
+
+.menu-mobile-content.active {
+    opacity: 1;
+    height: 100vh;
 }
