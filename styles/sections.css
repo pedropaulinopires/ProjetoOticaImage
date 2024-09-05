@@ -1,0 +1,59 @@
+.section-home{
+    width: 100vw;
+    height: 700px;
+    background-color: rgba(255, 0, 0, 0.261);
+    margin: auto;
+    background-image: url('../imgs/background-inicio.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.left-content-home{
+    /* background-image: url('../imgs/orange-img.png'); */
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    width: 40vw;
+}
+
+.tile-content-home{
+    height: 50vh;
+    width: 40vw;
+    background: rgba(117, 117, 117, 0);
+    box-shadow: 0 8px 32px 0 rgba(187, 156, 136, 0.37);
+    backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 0px 50px;
+}
+
+.tile-content-home > h1 {
+    color: var(--LaranjaClaro);
+    text-align: start;
+    font-size: 40px;
+}
+
+.tile-content-home > p {
+    text-align: justify;
+    line-height: 25px;
+}
+
+.right-content-home{
+    background-image: url('../imgs/mulher_oculos.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 40vw;
+}

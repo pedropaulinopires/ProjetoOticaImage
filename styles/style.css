@@ -22,6 +22,10 @@
     --CorBordaSeparador: rgba(255, 255, 255, 0.634)
 }
 
+body{
+    overflow-x: hidden;
+}
+
 body::-webkit-scrollbar {
     width: 5px;
     /* width of the entire scrollbar */
@@ -39,25 +43,25 @@ body::-webkit-scrollbar-thumb {
 
 .menu-fixo {
     background-color: var(--Preto);
-    padding: 10px 5px;
+    padding: 5px 2px;
     margin-bottom: -5px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .menu-itens-initial {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 10px;
-    gap: 15px;
+    padding: 5px 10px;
+    gap: 20px;
 }
 
 .menu-itens-final {
     display: none;
-    gap: 30px;
-    font-size: 20px;
+    gap: 25px;
+    font-size: 18px;
     padding-right: 25px;
 
 }
@@ -66,11 +70,13 @@ body::-webkit-scrollbar-thumb {
     .menu-itens-initial {
         justify-content: start;
     }
-
+    .menu-fixo {
+        justify-content: space-between;
+    }
 
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:500px) {
 
     .menu-itens-final {
         display: flex;
@@ -103,14 +109,8 @@ body::-webkit-scrollbar-thumb {
     color: var(--LaranjaClaro);
 }
 
-@media screen and (min-width:350px) {
-    .menu-itens-initial {
-        gap: 35px;
-    }
-}
-
-.info-menu>p {
-    font-size: 14px;
+.info-menu>a {
+    font-size: 12px;
 }
 
 .divider {
