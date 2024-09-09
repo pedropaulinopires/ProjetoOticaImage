@@ -1,54 +1,31 @@
-.section-home{
+.section-home {
     background-image: url('../imgs/background-inicio-mobile.jpg ');
     background-position: center;
     background-size: cover;
-    height: 550px;
-}
-
-@media screen and (min-width:330px) {
-    .section-home{
-        height: 500px;
-    }
-
-    .tile-content-home{
-        height: 200px;
-    }
-
-    .left-content-home{
-        height: 200px;
-    }
+    height: 580px;
 }
 
 
 @media screen and (min-width:600px) {
-    .section-home{
+    .section-home {
         height: 400px;
         background-image: url('../imgs/background-inicio.jpg ');
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .tile-content-home{
-        height: 400px;
-        width: 300px;
-    }
-
-    .left-content-home{
-        width: 300px;
-        margin-left: 40px;
     }
 }
 
-
-
-.left-content-home{
-    padding-top: 30px;
-    display: flex;
-    justify-content: center;
+@media screen and (min-width:900px) {
+    .section-home {
+        height: 500px;
+    }
 }
 
-.tile-content-home{
+@media screen and (min-width:1000px) {
+    .section-home {
+        height: 700px;
+    }
+}
+
+/* .tile-content-home{
     height: 230px;
     width: 80vw;
     background: rgba(117, 117, 117, 0);
@@ -74,9 +51,4 @@
     text-align: left;
     font-size: 15px;
     line-height: 20px;
-}
-
-.right-content-home{
-    width: 400px;
-    height: 50px;
-}
+} */
