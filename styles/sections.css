@@ -2,13 +2,16 @@
     background-image: url('../imgs/background-inicio-mobile.jpg ');
     background-position: center;
     background-size: cover;
-    height: 580px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
 }
 
 
 @media screen and (min-width:600px) {
     .section-home {
-        height: 400px;
+        height: 600px;
         background-image: url('../imgs/background-inicio.jpg ');
     }
 }
@@ -25,8 +28,8 @@
     }
 }
 
-/* .tile-content-home{
-    height: 230px;
+ .tile-content-home{
+    height: min-content;
     width: 80vw;
     background: rgba(117, 117, 117, 0);
     box-shadow: 0 8px 32px 0 rgba(187, 156, 136, 0.37);
@@ -38,7 +41,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 15px 20px;
+    padding: 25px 20px;
 }
 
 .tile-content-home > h1 {
@@ -51,4 +54,4 @@
     text-align: left;
     font-size: 15px;
     line-height: 20px;
-} */
+} 

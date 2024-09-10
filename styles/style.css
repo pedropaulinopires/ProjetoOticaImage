@@ -16,13 +16,14 @@
 :root {
     --Preto: #262223;
     --LaranjaClaro: #F26E22;
+    --LaranjaEscuro: #c75c1f;
     --MarromClaro: #BF5B21;
     --Marrom: #733E20;
     --MarromEscuro: #402C20;
     --CorBordaSeparador: rgba(255, 255, 255, 0.634)
 }
 
-body{
+html,body {
     overflow-x: hidden;
 }
 
@@ -70,6 +71,7 @@ body::-webkit-scrollbar-thumb {
     .menu-itens-initial {
         justify-content: start;
     }
+
     .menu-fixo {
         justify-content: space-between;
     }
@@ -99,6 +101,11 @@ body::-webkit-scrollbar-thumb {
     .link-menu-item:hover {
         opacity: 0.7;
     }
+
+    .btn-primary:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 02px 25px #f26e2276;
+    }
 }
 
 
@@ -121,4 +128,22 @@ body::-webkit-scrollbar-thumb {
 .remove-scrolling {
     height: 100%;
     overflow: hidden;
+}
+
+.btn-primary {
+    background-image: linear-gradient(to right top, var(--LaranjaClaro), var(--LaranjaEscuro));
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 02px 12px #f26e2276;
+    user-select: none;
+    transition: all .3s;
+}
+
+.btn-primary:active {
+    transform: scale(1.1);
+    box-shadow: 0px 02px 25px #f26e2276;
 }
