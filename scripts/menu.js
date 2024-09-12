@@ -4,16 +4,26 @@ let meunContent = document.getElementById("menu-mobile-content");
 let divsMenuMobile = [...btnMenu.children];
 let itensMenu = [...document.querySelectorAll(".item-menu")];
 
+
+
 let ativarDesativarMenu = () => {
+
+  let timeOutMenu = (ele) => {
+    ele.classList.add('active');
+  };
+
   btnMenu.classList.toggle("active");
   meunContent.classList.toggle("active");
   document.body.classList.toggle("remove-scrolling");
+
+  clearTimeout(timeOutMenu);
+
   itensMenu.forEach((ele, index) => {
     if (ele.classList.contains('active')) {
       ele.classList.remove('active')
     } else {
       setTimeout(() => {
-        ele.classList.add('active');
+        timeOutMenu(ele)
       }, index * 200);
     }
   })

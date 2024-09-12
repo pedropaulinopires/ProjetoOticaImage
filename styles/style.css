@@ -23,10 +23,6 @@
     --CorBordaSeparador: rgba(255, 255, 255, 0.634)
 }
 
-html,body {
-    overflow-x: hidden;
-}
-
 body::-webkit-scrollbar {
     width: 5px;
     /* width of the entire scrollbar */
