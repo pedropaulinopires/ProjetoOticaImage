@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         origin: 'left',
     });
 
-    
+
     sr.reveal('.img-1', {
         easing: "ease-out",
         interval: 500,
@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         origin: 'top',
     });
 
-    
+
     sr.reveal('.img-2', {
         easing: "ease-out",
         interval: 500,
@@ -35,10 +35,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
         origin: 'top',
     });
 
-    var rellax = new Rellax('.rellax');
+    var rellax = new Rellax('.rellax', {
+        center: true,
+        round: true,
+    });
 
     function atualizarRellax() {
-        rellax.refresh(); 
+        rellax.refresh();
     }
 
     window.addEventListener('resize', atualizarRellax);
