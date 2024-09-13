@@ -1,5 +1,5 @@
 .scroll-top{
-    background-color: var(--Preto);
+    background-color: var(--Cor1);
     height: 40px;
     width: 40px;
     border-radius: 25%;
@@ -15,7 +15,7 @@
     bottom: 40px;
 }
 .scroll-top div{
-    background-color: var(--LaranjaClaro);
+    background-color: var(--Cor2);
     width: 16px;
     height: 3px;
     border-radius: 5px;

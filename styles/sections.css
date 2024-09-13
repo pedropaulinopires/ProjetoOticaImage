@@ -5,17 +5,18 @@
     flex-direction: column;
     gap: 50px;
     padding-top: 40px;
+    margin-bottom: 230px;
 }
 
-.separetor-home{
+.separetor-home {
     width: 99vw;
     display: flex;
     justify-content: center;
     padding: 0px 20px;
 }
 
-@media screen and (min-width:400px ){
-    .separetor-home{
+@media screen and (min-width:400px) {
+    .separetor-home {
         padding: 0px 40px;
     }
 }
@@ -40,12 +41,6 @@
     .tile-content-home>h1 {
         font-size: 40px;
     }
-
-    .tile-content-home>p {
-        font-size: 16px;
-        line-height: 25px;
-    }
-
 }
 
 .tile-content-home {
@@ -64,12 +59,14 @@
 }
 
 .tile-content-home>h1 {
-    color: var(--LaranjaClaro);
+    color: var(--Cor2);
     text-align: left;
 }
 
 .tile-content-home>p {
     text-align: left;
+    font-size: 16px;
+    line-height: 25px;
 }
 
 .tile-image {
@@ -87,7 +84,7 @@
     background-size: cover;
     box-shadow: 0 8px 32px 0 rgba(187, 156, 136, 0.37);
     cursor: pointer;
-    width: 38vw;
+    width: 35vw;
     max-width: 200px;
     height: 200px;
 }
@@ -98,9 +95,61 @@
 
 
 .img-2 {
-    background-image: url('../imgs/mulher-2.png');
+    background-image: url('../imgs/homem-1.png');
 }
 
 .img-3 {
     background-image: url('../imgs/mulher-3.png');
+}
+
+
+.section-content {
+    width: 90vw;
+    padding: 0px 25px;
+    margin: auto;
+    margin-top: 150px;
+    overflow-x: hidden;
+}
+
+.title-section {
+    padding-bottom: 25px;
+}
+
+.title-section>h1 {
+    text-align: center;
+    color: var(--Cor2);
+    margin-bottom: 20px;
+}
+
+.title-section p {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: justify
+}
+
+
+.card {
+    background-color: white;
+    border: 1px solid black;
+    padding: 25px;
+    background: rgba(254, 254, 254, 0.037);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .1), 0 1px 8px rgba(0, 0, 0, .2);
+    border-radius: 25px;
+}
+
+.img-section{
+    width: 85vw;
+    height: 400px;
+    background-position: top;
+    background-size: cover;
+}
+
+.img-sobre-1{
+    background-image: url('../imgs/homem-2.png');
+}
+
+.img-sobre-2{
+    background-image: url('../imgs/mulher-4.png');
 }

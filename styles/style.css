@@ -14,12 +14,12 @@
 }
 
 :root {
-    --Preto: #262223;
-    --LaranjaClaro: #F26E22;
-    --LaranjaEscuro: #c75c1f;
-    --MarromClaro: #BF5B21;
-    --Marrom: #733E20;
-    --MarromEscuro: #402C20;
+    --Cor1: #262223;
+    --Cor2: #F26E22;
+    --Cor3: #c75c1f;
+    --Cor4: #BF5B21;
+    --Cor5: #733E20;
+    --Cor6: #402C20;
     --CorBordaSeparador: rgba(255, 255, 255, 0.634)
 }
 
@@ -35,11 +35,11 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     border-radius: 50px;
-    border: 3px solid var(--LaranjaClaro);
+    border: 3px solid var(--Cor2);
 }
 
 .menu-fixo {
-    background-color: var(--Preto);
+    background-color: var(--Cor1);
     padding: 5px 2px;
     margin-bottom: -5px;
     display: flex;
@@ -86,7 +86,7 @@ body::-webkit-scrollbar-thumb {
 .link-menu-item {
     display: flex;
     text-decoration: none;
-    color: var(--LaranjaClaro);
+    color: var(--Cor2);
     align-items: center;
     justify-content: center;
     gap: 8px;
@@ -109,7 +109,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--LaranjaClaro);
+    color: var(--Cor2);
 }
 
 .info-menu>a {
@@ -127,7 +127,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .btn-primary {
-    background-image: linear-gradient(to right top, var(--LaranjaClaro), var(--LaranjaEscuro));
+    background-image: linear-gradient(to right top, var(--Cor2), var(--Cor3));
     border: none;
     color: white;
     padding: 10px 25px;

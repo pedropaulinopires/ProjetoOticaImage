@@ -13,3 +13,13 @@ Na Ótica Imagem, oferecemos uma ampla seleção de óculos que combinam elegân
 
 
 Na Ótica Imagem, você encontra óculos elegantes, confortáveis e tecnológicos. Descubra um novo olhar com nossas coleções exclusivas!
+
+
+
+    --Preto: #262223;   --Cor1
+    --LaranjaClaro: #F26E22; --Cor2
+    --LaranjaEscuro: #c75c1f; --Cor3
+    --MarromClaro: #BF5B21; --Cor4
+    --Marrom: #733E20; --Cor5
+    --MarromEscuro: #402C20; --Cor6
+    --CorBordaSeparador: rgba(255, 255, 255, 0.634)

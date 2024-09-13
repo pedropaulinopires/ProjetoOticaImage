@@ -35,6 +35,46 @@ window.addEventListener('DOMContentLoaded', (event) => {
         origin: 'top',
     });
 
+    sr.reveal('.title', {
+        easing: "ease-out",
+        interval: 800,
+        reset: true,
+        distance: '0%',
+        origin: 'left',
+    });
+    
+    sr.reveal('.card1-section-title', {
+        easing: "ease-out",
+        interval: 800,
+        reset: true,
+        distance: '20%',
+        origin: 'left',
+    });
+
+    sr.reveal('.img-sobre-1', {
+        easing: "ease-out",
+        interval: 800,
+        reset: true,
+        distance: '20%',
+        origin: 'right',
+    });
+    
+    sr.reveal('.card2-section-title', {
+        easing: "ease-out",
+        interval: 800,
+        reset: true,
+        distance: '20%',
+        origin: 'right',
+    });
+ 
+    sr.reveal('.img-sobre-2', {
+        easing: "ease-out",
+        interval: 800,
+        reset: true,
+        distance: '20%',
+        origin: 'left',
+    });
+
     var rellax = new Rellax('.rellax', {
         center: true,
         round: true,
