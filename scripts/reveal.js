@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     sr.reveal('.title', {
         easing: "ease-out",
         interval: 800,
-        reset: true,
+        reset: false,
         distance: '0%',
         origin: 'left',
     });
@@ -50,14 +50,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
         distance: '20%',
         origin: 'left',
     });
-
-    sr.reveal('.img-sobre-1', {
-        easing: "ease-out",
-        interval: 800,
-        reset: true,
-        distance: '20%',
-        origin: 'right',
-    });
     
     sr.reveal('.card2-section-title', {
         easing: "ease-out",
@@ -66,15 +58,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
         distance: '20%',
         origin: 'right',
     });
- 
-    sr.reveal('.img-sobre-2', {
-        easing: "ease-out",
-        interval: 800,
-        reset: true,
-        distance: '20%',
-        origin: 'left',
-    });
-
     var rellax = new Rellax('.rellax', {
         center: true,
         round: true,

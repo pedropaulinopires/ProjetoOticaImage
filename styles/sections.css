@@ -104,8 +104,7 @@
 
 
 .section-content {
-    width: 90vw;
-    padding: 0px 25px;
+    width: 99vw;
     margin: auto;
     margin-top: 150px;
     overflow-x: hidden;
@@ -113,6 +112,8 @@
 
 .title-section {
     padding-bottom: 25px;
+    width: 80vw;
+    margin: auto;
 }
 
 .title-section>h1 {
@@ -137,19 +138,55 @@
     border: 1px solid rgba(255, 255, 255, .2);
     box-shadow: 0 10px 30px rgba(0, 0, 0, .1), 0 1px 8px rgba(0, 0, 0, .2);
     border-radius: 25px;
+    max-width: 350px;
 }
 
-.img-section{
-    width: 85vw;
-    height: 400px;
-    background-position: top;
+.content-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+    max-width: 600px;
+}
+
+.content-section-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 700px;
+}
+
+#content-img1 {
+    background-image: url('../imgs/homem-3-small.png');
+    background-position: center;
     background-size: cover;
 }
 
-.img-sobre-1{
-    background-image: url('../imgs/homem-2.png');
+#content-img2 {
+    background-image: url('../imgs/mulher-5-small.png');
+    background-position: center;
+    background-size: cover;
 }
 
-.img-sobre-2{
-    background-image: url('../imgs/mulher-4.png');
+@media screen and (min-width:400px) {
+    #content-img1 {
+        background-image: url('../imgs/homem-3.png');
+    }
+
+    #content-img2 {
+        background-image: url('../imgs/mulher-5.png');
+    }
+}
+
+
+@media screen and (min-width:800px) {
+    .content-section-title {
+        height: 300px;
+    }
+
+    #content-img1 {
+        background-image: url('../imgs/homem-3-desktop.png');
+        background-position: right;
+        background-size: contain;
+    }
 }
