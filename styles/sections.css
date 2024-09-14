@@ -5,7 +5,7 @@
     flex-direction: column;
     gap: 50px;
     padding-top: 40px;
-    margin-bottom: 230px;
+    margin-bottom: 300px;
 }
 
 .separetor-home {
@@ -25,10 +25,13 @@
 @media screen and (min-width:1140px) {
 
     .section-home {
-        height: 600px;
+        height: 100vh;
+        min-height: 600px;
         flex-direction: row;
         justify-content: center;
         gap: 0px;
+        margin-bottom: 100px;
+        padding-top: 0px;
     }
 
     .tile-content-home {
@@ -36,10 +39,6 @@
         max-width: 650px;
         margin-left: 5vw;
         height: 400px;
-    }
-
-    .tile-content-home>h1 {
-        font-size: 40px;
     }
 }
 
@@ -104,9 +103,8 @@
 
 
 .section-content {
-    width: 99vw;
+    width: 90vw;
     margin: auto;
-    margin-top: 150px;
     overflow-x: hidden;
 }
 
@@ -119,7 +117,7 @@
 .title-section>h1 {
     text-align: center;
     color: var(--Cor2);
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .title-section p {
@@ -146,7 +144,8 @@
     flex-direction: column;
     justify-content: center;
     gap: 80px;
-    max-width: 600px;
+    max-width: 700px;
+    margin: auto;
 }
 
 .content-section-title {
@@ -156,37 +155,59 @@
     height: 700px;
 }
 
+@media screen and (min-width:420px) {
+    .content-section-title {
+        height: 500px;
+    }
+}
+
 #content-img1 {
-    background-image: url('../imgs/homem-3-small.png');
+    background-image: url('../imgs/homem-3.png');
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #content-img2 {
-    background-image: url('../imgs/mulher-5-small.png');
+    background-image: url('../imgs/mulher-5.png');
     background-position: center;
     background-size: cover;
-}
-
-@media screen and (min-width:400px) {
-    #content-img1 {
-        background-image: url('../imgs/homem-3.png');
-    }
-
-    #content-img2 {
-        background-image: url('../imgs/mulher-5.png');
-    }
+    background-repeat: no-repeat;
 }
 
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:700px) {
+
     .content-section-title {
         height: 300px;
+        align-items: center;
     }
+
 
     #content-img1 {
         background-image: url('../imgs/homem-3-desktop.png');
         background-position: right;
-        background-size: contain;
+        background-size: cover;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #content-img2 {
+        background-image: url('../imgs/mulher-5-desktop.png');
+        background-position: left;
+        background-size: cover;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .content-title {
+        gap: 0px;
     }
 }
+
+.title-product{
+    text-align: center;
+    margin-top: 150px;
+}
+
+

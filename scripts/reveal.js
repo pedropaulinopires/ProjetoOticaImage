@@ -38,9 +38,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     sr.reveal('.title', {
         easing: "ease-out",
         interval: 800,
-        reset: false,
-        distance: '0%',
-        origin: 'left',
+        reset: true,
+        distance: '5%',
+        origin: 'top',
     });
     
     sr.reveal('.card1-section-title', {

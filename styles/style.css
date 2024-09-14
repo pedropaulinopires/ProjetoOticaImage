@@ -38,6 +38,21 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid var(--Cor2);
 }
 
+h1 {
+    font-size: 30px;
+    color: var(--Cor2);
+}
+
+main{
+    overflow: hidden;
+}
+
+@media screen and (min-width:600px) {
+    h1 {
+        font-size: 35px;
+    }
+}
+
 .menu-fixo {
     background-color: var(--Cor1);
     padding: 5px 2px;
