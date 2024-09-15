@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     sr.reveal('.title', {
         easing: "ease-out",
         interval: 800,
-        reset: true,
+        reset: false,
         distance: '5%',
         origin: 'top',
     });
@@ -58,6 +58,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         distance: '20%',
         origin: 'right',
     });
+    
     var rellax = new Rellax('.rellax', {
         center: true,
         round: true,
