@@ -57,6 +57,11 @@
     transition: all .3s;
 }
 
+.menu-desktop-content > a.active{
+    background-color: var(--Cor2);
+    color: var(--Cor1);
+}
+
 @media screen and (min-width:500px) {
     .btn-menu {
         display: none;
@@ -69,7 +74,6 @@
 
 @media (hover: hover) and (pointer: fine) {
     .menu-desktop-content>a:hover {
-        opacity: 0.7;
         background-color: var(--Cor2);
         color: var(--Cor1);
     }

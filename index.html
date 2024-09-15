@@ -51,31 +51,31 @@
                 <div class="line3"></div>
             </div>
             <div class="menu-desktop-content" id="menu-desktop-content">
-                <a href="#">Início</a>
-                <a href="#">Sobre</a>
-                <a href="#">Produtos</a>
-                <a href="#">Contato</a>
+                <a href="#" data-navigation="inicio" class="nav">Início</a>
+                <a href="#" data-navigation="sobre" class="nav">Sobre</a>
+                <a href="#" data-navigation="produtos" class="nav">Produtos</a>
+                <a href="#" data-navigation="contato" class="nav">Contato</a>
             </div>
         </div>
         <div class="menu-mobile-content" id="menu-mobile-content">
             <div class="itens-menu-mobile">
-                <a href="#" class="item-menu">Início</a>
-                <a href="#" class="item-menu">Sobre</a>
-                <a href="#" class="item-menu">Produtos</a>
-                <a href="#" class="item-menu">Contato</a>
+                <a href="#" data-navigation="inicio" class="item-menu nav">Início</a>
+                <a href="#" data-navigation="sobre" class="item-menu nav">Sobre</a>
+                <a href="#" data-navigation="produtos" class="item-menu nav">Produtos</a>
+                <a href="#" data-navigation="contato" class="item-menu nav">Contato</a>
             </div>
             <i class="fa-solid fa-xmark" id="btn-close-menu" style="color: #f26e22; font-size: 50px;"></i>
         </div>
     </nav>
 
     <main>
-        <article class="section-home">
+        <article class="section-home section" id="inicio">
             <div class="separetor-home">
                 <div class="tile-content-home rellax" data-rellax-speed=".1">
                     <h1>Encontre o Estilo Perfeito para Seus Olhos</h1>
                     <p>Na Ótica Imagem, você encontra óculos elegantes, confortáveis e tecnológicos. Descubra um novo
                         olhar com nossas coleções exclusivas!</p>
-                    <div class="btn-primary">Saiba mais!</div>
+                    <div class="btn-primary nav" data-navigation="sobre">Saiba mais!</div>
                 </div>
             </div>
             <div class="separetor-home">
@@ -87,7 +87,7 @@
             </div>
         </article>
 
-        <article class="section-content">
+        <article class="section-content section" id="sobre">
             <div class="title-section">
                 <h1 class="title">Sobre Nós</h1>
 
@@ -118,7 +118,7 @@
             </div>
         </article>
 
-        <article class="section-content">
+        <article class="section-content section" id="produtos">
             <div class="title-product">
                 <h1 class="title">Produtos</h1>
                 <div class="products" id="products">
@@ -126,25 +126,31 @@
             </div>
         </article>
 
-        <article class="section-content">
+        <article class="section-content section" id="contato">
             <div class="title-contact">
                 <h1 class="title">Contato</h1>
                 <div class="content-contact">
-                    <a href="#" class="link-contact-item"><i class="fa-brands fa-instagram" style="color: #f26e22;"></i><p>Instagram</p></a>
-                    <a href="#" class="link-contact-item"><i class="fa-brands fa-facebook" style="color: #f26e22;"></i><p>Facebook</p></a>
-                    <a href="#" class="link-contact-item"><i class="fa-brands fa-whatsapp" style="color: #f26e22;"></i><p>Whatsapp</p></a>
+                    <a href="#" class="link-contact-item"><i class="fa-brands fa-instagram" style="color: #f26e22;"></i>
+                        <p>Instagram</p>
+                    </a>
+                    <a href="#" class="link-contact-item"><i class="fa-brands fa-facebook" style="color: #f26e22;"></i>
+                        <p>Facebook</p>
+                    </a>
+                    <a href="#" class="link-contact-item"><i class="fa-brands fa-whatsapp" style="color: #f26e22;"></i>
+                        <p>Whatsapp</p>
+                    </a>
                 </div>
             </div>
         </article>
         <footer>
-            <div class="icons-footer">
+            <!-- <div class="icons-footer">
                 <a href="#" class="link-footer-item"><i class="fa-brands fa-instagram" style="color: #f26e22;"></i></a>
                 <a href="#" class="link-footer-item"><i class="fa-brands fa-facebook" style="color: #f26e22;"></i></a>
                 <a href="#" class="link-footer-item"><i class="fa-brands fa-whatsapp" style="color: #f26e22;"></i></a>
-            </div>
+            </div> -->
             <div class="info-footer">
                 <p>Ótica imagem</p>
-                <p>&copy;2024   Todos direitos reservados</p>
+                <p>&copy;2024 Todos direitos reservados</p>
             </div>
         </footer>
     </main>
@@ -156,6 +162,7 @@
     <script src="scripts/scrollTop.js"></script>
     <script src="scripts/reveal.js"></script>
     <script src="scripts/products.js"></script>
+    <script src="scripts/nav.js"></script>
 </body>
 
 </html>
