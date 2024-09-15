@@ -37,7 +37,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     sr.reveal('.title', {
         easing: "ease-out",
-        interval: 800,
         reset: false,
         distance: '5%',
         origin: 'top',
@@ -46,7 +45,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     sr.reveal('.card1-section-title', {
         easing: "ease-out",
         interval: 800,
-        reset: true,
+        reset: false,
         distance: '20%',
         origin: 'left',
     });
@@ -54,7 +53,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
     sr.reveal('.card2-section-title', {
         easing: "ease-out",
         interval: 800,
-        reset: true,
+        reset: false,
+        distance: '20%',
+        origin: 'right',
+    });
+
+    sr.reveal('.link-contact-item', {
+        easing: "ease-out",
+        interval: 500,
+        reset: false,
         distance: '20%',
         origin: 'right',
     });

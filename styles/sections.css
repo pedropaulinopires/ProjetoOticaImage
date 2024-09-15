@@ -207,4 +207,62 @@
     margin-top: 150px;
 }
 
+.title-contact{
+    margin-top: 50px;
+    text-align: center;
+    height: 600px;
+    background-image: url('../imgs/mulher-6.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 650px;
+    margin: auto;
+}
 
+.content-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 60px;
+}
+
+.link-contact-item{
+    color: var(--Cor2); 
+    font-size: 20px;
+    text-decoration: none;
+    width: min-content;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    transition: all .3s;
+}
+
+.link-contact-item:active > a{
+    opacity: 0.7;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .link-contact-item:hover > p{
+        opacity: .7;
+    }
+}
+
+
+@media screen and (min-width:700px) {
+    .title-contact{
+        background-image: url('../imgs/mulher-6-desktop.png');
+        background-position: right;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .content-contact{
+        display: flex;
+        align-items: flex-start;
+        padding-left: 90px;
+    }
+}
